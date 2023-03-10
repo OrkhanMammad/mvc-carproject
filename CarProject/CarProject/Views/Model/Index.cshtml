@@ -1,0 +1,17 @@
+﻿@model List<CarModel>
+
+    <h1>Model List</h1>
+
+
+    <ul>
+    @foreach(CarModel modell in Model)
+    {
+
+        <li><a href="http://localhost:5090/CarList/index/@modell.ID">@modell.ModelName</a></li>
+    }
+
+
+
+
+
+    </ul>

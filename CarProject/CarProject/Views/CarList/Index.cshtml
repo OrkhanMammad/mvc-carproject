@@ -1,0 +1,17 @@
+﻿@model List<Cars>
+
+
+
+    <h1>Masin Siyasisi</h1>
+
+
+    <ul>
+    @foreach(Cars car in Model)
+    {
+        <li>Car ID:@car.ID  Ban Type:@car.BanType  Fuel Type: @car.FuelType  Production Year: @car.year</li>
+
+    }
+
+
+
+    </ul>

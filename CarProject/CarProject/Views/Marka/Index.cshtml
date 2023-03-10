@@ -1,0 +1,16 @@
+﻿@model List<Marka>
+
+
+    <h1>Marka Names</h1>
+
+    <ul>
+
+    @foreach(Marka marka in Model)
+    {
+        <li><a href="http://localhost:5090/model/index/@marka.ID">@marka.Name</a></li>
+
+    }
+
+
+
+    </ul>
